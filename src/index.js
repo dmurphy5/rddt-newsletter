@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 
 const connect = require("./db");
 const routes = require("./routes");
+const { startJob } = require("./newsletter/job");
 
 const app = express();
 
@@ -17,5 +18,6 @@ connect();
 (async function __main__() {
   const port = process.env.NODE_PORT || 7000;
   await app.listen(port);
+  const job = startJob();
   console.log(`listening at ${port}`);
 })();

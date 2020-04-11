@@ -1,6 +1,8 @@
 # rddt-newsletter
 reddit newsletter for a code challenge
 
+###NOTE: You will need a config file in order to run locally.  Email xdylanmurphyx@gmail.com for info.
+
 ## How to run
 `npm install && npm start` will install all packages and run the app at localhost:7000
 
